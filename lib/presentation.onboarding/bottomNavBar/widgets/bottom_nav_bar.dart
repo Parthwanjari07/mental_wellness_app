@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mental_wellness/presentation.onboarding/bottomNavBar/bloc/navigation_bloc.dart';
 import 'package:mental_wellness/presentation.onboarding/bottomNavBar/bloc/navigation_event.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
 class BottomNavBar extends StatelessWidget {
   final List<BottomNavigationBarItem> items;
@@ -16,7 +15,7 @@ class BottomNavBar extends StatelessWidget {
         items: items,
         currentIndex: currentIndex,
         onTap: (index) {
-          context.read<NavigationBloc>()..add(NavigateTo(index: index));
+          context.read<NavigationBloc>().add(NavigateTo(index: index));
         });
   }
 }
