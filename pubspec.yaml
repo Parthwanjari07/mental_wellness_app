@@ -43,7 +43,8 @@ dev_dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
   flutter_bloc: ^8.1.6
-  equatable: ^2.0.5 
+  equatable: ^2.0.5
+  audio_video_progress_bar: ^1.0.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

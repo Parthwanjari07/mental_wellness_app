@@ -10,10 +10,10 @@ class MeditationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Meditation'),
-          backgroundColor: Colors.white,
+          // title: const Text('Meditation'),
+          backgroundColor: DefaultColors.white,
           leading: Image.asset('assets/menu_burger.png'),
-          elevation: 4,
+          // elevation: 4,
           actions: const [
             CircleAvatar(
               backgroundImage: AssetImage('assets/profile.png'),
@@ -23,6 +23,7 @@ class MeditationScreen extends StatelessWidget {
             )
           ],
         ),
+        backgroundColor: DefaultColors.white,
         body: Container(
           padding: EdgeInsets.all(16),
           child: SingleChildScrollView(
@@ -67,9 +68,17 @@ class MeditationScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                Text(
-                  'Today\'s Task',
-                  style: Theme.of(context).textTheme.titleMedium,
+                
+                SizedBox(
+                  height: 15,
+                ),
+                
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Today\'s Task',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
                 ),
                 const SizedBox(
                   height: 16,
