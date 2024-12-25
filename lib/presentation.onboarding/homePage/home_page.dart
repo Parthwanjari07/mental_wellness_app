@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mental_wellness/features/music/presentation/pages/music_player_screen.dart';
+import 'package:mental_wellness/features/music/presentation/pages/playlist_screen.dart';
 import 'package:mental_wellness/presentation.onboarding/bottomNavBar/bloc/navigation_bloc.dart';
 import 'package:mental_wellness/presentation.onboarding/bottomNavBar/bloc/navigation_event.dart';
 import 'package:mental_wellness/presentation.onboarding/bottomNavBar/bloc/navigation_state.dart';
@@ -8,10 +9,7 @@ import 'package:mental_wellness/presentation.onboarding/bottomNavBar/widgets/bot
 import 'package:mental_wellness/features/meditation/presentation/pages/medatation_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  final List<Widget> pages = [
-    const MeditationScreen(),
-    const MusicPlayerScreen()
-  ];
+  final List<Widget> pages = [const MeditationScreen(), PlaylistScreen()];
 
   HomeScreen({super.key});
 

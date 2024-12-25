@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mental_wellness/core/theme.dart';
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
+import 'package:mental_wellness/features/music/presentation/pages/playlist_screen.dart';
 
 class MusicPlayerScreen extends StatelessWidget {
   const MusicPlayerScreen({super.key});
@@ -11,7 +12,12 @@ class MusicPlayerScreen extends StatelessWidget {
         appBar: AppBar(
           // title: const Text('Meditation'),
           backgroundColor: DefaultColors.white,
-          leading: Image.asset('assets/down_arrow.png'),
+          leading: GestureDetector(
+            child: Image.asset('assets/down_arrow.png'),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
           // elevation: 4,
           actions: [
             Image.asset('assets/transcript_icon.png'),
